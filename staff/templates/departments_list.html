@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список отделений</title>
+</head>
+<body>
+    <h1>Список отделений госпиталя</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название отделения</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for department in departments %}
+            <tr>
+                <td>{{ department.d_id }}</td>
+                <td>{{ department.d_name }}</td>
+                <td>
+                    <a href="{{ url_for('staff_bp.doctors_by_department', department_id=department.d_id) }}">
+                        Показать врачей
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать данные врача</title>
+</head>
+<body>
+    <h1>Редактировать данные врача</h1>
+    <form action="" method="POST">
+        <label for="doc_surname">Фамилия:</label><br>
+        <input type="text" pattern="[А-Яа-яЁё\s]+" id="doc_surname" name="doc_surname" value="{{ doctor.doc_surname }}" required><br>
+
+        <label for="doc_passport">Паспорт:</label><br>
+        <input type="text" id="doc_passport" name="doc_passport" value="{{ doctor.doc_passport }}" required><br>
+
+        <label for="doc_address">Адрес:</label><br>
+        <input type="text" id="doc_address" name="doc_address" value="{{ doctor.doc_address }}" required><br>
+
+        <label for="doc_birthday">Дата рождения:</label><br>
+        <input type="date" id="doc_birthday" name="doc_birthday" value="{{ doctor.doc_birthday }}" required><br>
+
+        <label for="doc_specialization">Специализация:</label><br>
+        <input type="text" id="doc_specialization" name="doc_specialization" value="{{ doctor.doc_specialization }}" required><br>
+
+        <label for="doc_hire_date">Дата приема на работу:</label><br>
+        <input type="date" id="doc_hire_date" name="doc_hire_date" value="{{ doctor.doc_hire_date }}" required><br>
+
+        <label for="doc_fire_date">Дата увольнения:</label><br>
+        <input type="date" id="doc_fire_date" name="doc_fire_date" value="{{ doctor.doc_fire_date }}"><br>
+
+        <input type="submit" value="Сохранить изменения">
+    </form>
+    <br>
+    <a href="{{ url_for('staff_bp.doctors_by_department', department_id=department_id) }}">Назад к списку врачей</a>
+</body>
+</html>

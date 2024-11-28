@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотреть отчет</title>
+</head>
+<body>
+    <center>
+        <h2>Просмотреть отчет</h2>
+        {% if result_message %}
+            <p>{{ result_message }}</p>
+        {% endif %}
+        <form action="" method="post">
+            <label for="report_choice">Выберите отчет</label>
+            <select name="report_choice" id="report_choice">
+                <option value="">-- Выберите отчет --</option>
+                <option value="1">Отчет о работе врачей</option>
+                <option value="2">Отчет о работе отделений</option>
+            </select>
+            <br><br>
+            <label for="month_choice">Выберите месяц</label>
+            <select name="month_choice" id="month_choice">
+                 <option value="">-- Выберите месяц --</option>
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            <br><br>
+            <label for="year_choice">Выберите год</label>
+            <select name="year_choice" id="year_choice">
+                 <option value="">-- Выберите год --</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+            <br><br>
+            <button type="submit">Просмотреть отчет</button>
+        </form>
+        <br>
+        {% if report_data %}
+            <h3>Результаты отчета</h3>
+            <table border="1">
+                <tr>
+                    {% for column in schema %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in report_data %}
+                <tr>
+                    {% for cell in row %}
+                        <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+        <br>
+        <a href="{{ url_for('report_bp.report_menu') }}">Вернуться в меню отчетов</a>
+    </center>
+</body>
+</html>

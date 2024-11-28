@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр отчета</title>
+    <link href="{{url_for('static', filename='sem1.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center>
+    <h2>{{result_message}}</h2>
+    <table border="1">
+        <tr class="tab_title">
+            <td>ID врача</td>
+            <td>Фамилия врача</td>
+            <td>Количество пациентов у врача</td>
+        </tr>
+        {% for doctor in doctors %}
+        <tr>
+            <td>{{ doctor.doctor_id }}</td>
+            <td>{{ doctor.doctor_surname }}</td>
+            <td>{{ doctor.patient_count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{{ url_for('report_bp.report_menu') }}">Вернуться в меню отчетов</a>
+</center>
+</body>
+</html>

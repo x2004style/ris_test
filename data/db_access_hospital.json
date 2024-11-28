@@ -1,0 +1,5 @@
+{
+  "doctor": ["auth_bp", "query_bp","report_bp.report_menu", "report_bp.create_report"],
+  "head_doctor": ["auth_bp", "query_bp", "report_bp"],
+  "admin" : ["auth_bp", "query_bp", "staff_bp"]
+}

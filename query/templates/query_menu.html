@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор запроса</title>
+</head>
+<body>
+    <h1>Выберите запрос для выполнения</h1>
+    <ul>
+        {% for query in queries %}
+        <li><a href="{{ url_for('query_bp.query_handler', query_id=query.id) }}">{{ query.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a></p>
+</body>
+</html>

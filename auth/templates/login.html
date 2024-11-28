@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+    <h1>Введите логин и пароль</h1>
+    <form action="{{ url_for('auth_bp.auth_login') }}" method="post">
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Войти">
+    </form>
+    <br>
+    <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+</body>
+</html>

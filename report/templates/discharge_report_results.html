@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр отчета</title>
+    <link href="{{url_for('static', filename='sem1.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center>
+    <h2>{{result_message}}</h2>
+    <table border="1">
+        <tr class="tab_title">
+            <td>ID отделения</td>
+            <td>Название отделения</td>
+            <td>Количество выписавшихся пациентов</td>
+        </tr>
+        {% for department in departments %}
+        <tr>
+            <td>{{ department.department_id }}</td>
+            <td>{{ department.department_name }}</td>
+            <td>{{ department.discharge_count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{{ url_for('report_bp.report_menu') }}">Вернуться в меню отчетов</a>
+</center>
+</body>
+</html>

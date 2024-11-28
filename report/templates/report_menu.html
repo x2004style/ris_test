@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню отчетов</title>
+</head>
+<body>
+    <center>
+        <h2>Меню отчетов</h2>
+        <a href="{{ url_for('report_bp.create_report') }}">Создать отчет</a>
+        <br><br>
+        <a href="{{ url_for('report_bp.view_report') }}">Просмотреть отчет</a>
+        <br><br>
+        <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+    </center>
+</body>
+</html>

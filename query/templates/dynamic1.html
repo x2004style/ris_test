@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic</title>
+    <link href="{{ url_for('static', filename='sem1.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center>
+    <h2>{{prod_title}}</h2>
+    <table border="1">
+        <tr class="tab_title">
+            <td>ID врача</td>
+            <td>Фамилия врача</td>
+            <td>Количество пациентов</td>
+        </tr>
+        {% for doctor in doctors %}
+        <tr>
+            <td>{{doctor[0]}}</td>
+            <td>{{doctor[1]}}</td>
+            <td>{{doctor[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+    <a href="{{ url_for('query_bp.query_menu') }}">Нажмите для возврата в меню запросов</a>
+    </p>
+</center>
+</body>
+</html>

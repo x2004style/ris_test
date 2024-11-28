@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Не авторизованы</title>
+</head>
+<body>
+    <h2>Вы не авторизованы. Пожалуйста, войдите в систему.</h2>
+    <a href="{{ url_for('auth_bp.auth_index') }}">Авторизоваться</a>
+    </form>
+    <br>
+    <br>
+    <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+</body>
+</html>

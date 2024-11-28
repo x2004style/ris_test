@@ -1,0 +1,1 @@
+SELECT * FROM doctor WHERE doc_id = $doc_id
