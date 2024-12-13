@@ -12,9 +12,9 @@ provider = SQLProvider(os.path.join(os.path.dirname(__file__), 'sql'))
 @group_required
 def query_menu():
     queries = [
-        {'id': 1, 'name': 'Запрос о лечащих врачах'},
-        {'id': 2, 'name': 'Запрос об отделениях'},
-        {'id': 3, 'name': 'Запрос о пациентах'}
+        {'id': 1, 'name': 'Сведения о врачах, которые не назначались лечащими врачами'},
+        {'id': 2, 'name': 'Записи в истории болезни пациента'},
+        {'id': 3, 'name': 'Сведения о текущих пациентах'}
     ]
     return render_template('query_menu.html', queries=queries)
 
@@ -26,7 +26,7 @@ def query_handler(query_id):
     if query_id == 1:
         return render_template('input_doctor.html')
     elif query_id == 2:
-        return render_template('input_department.html')
+        return render_template('input_patient_history.html')
     elif query_id == 3:
         return render_template('input_patient.html')
 
@@ -43,7 +43,7 @@ def query_result_handler(query_id):
         if query_id == 1:
             return render_template('dynamic1.html', prod_title=prod_title, doctors=res_info.result)
         if query_id == 2:
-            return render_template('dynamic2.html', prod_title=prod_title, departments=res_info.result)
+            return render_template('dynamic2.html', prod_title=prod_title, history=res_info.result)
         if query_id == 3:
             return render_template('dynamic3.html', prod_title=prod_title, patients=res_info.result)
     elif res_info.error_message == 'type_error':

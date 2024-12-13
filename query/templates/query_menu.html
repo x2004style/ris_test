@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Выбор запроса</title>
+    <link href="{{ url_for('static', filename='query.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Выберите запрос для выполнения</h1>
-    <ul>
-        {% for query in queries %}
-        <li><a href="{{ url_for('query_bp.query_handler', query_id=query.id) }}">{{ query.name }}</a></li>
-        {% endfor %}
-    </ul>
-    <p><a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a></p>
+    <div class="query-selection-container">
+        <h1>Выберите запрос для выполнения</h1>
+        <ul class="query-list">
+            {% for query in queries %}
+            <li><a href="{{ url_for('query_bp.query_handler', query_id=query.id) }}" class="query-link">{{ query.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <p><a href="{{ url_for('main_menu') }}" class="return-link">Вернуться в главное меню</a></p>
+    </div>
 </body>
 </html>

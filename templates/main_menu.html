@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главное меню</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_menu.css') }}">
 </head>
 <body>
-<h7> {{message}} </h7>
-<center>
-    <h2>Главное меню</h2>
-    <p>
-        <a href="{{url_for('auth_bp.auth_index')}}">Авторизация</a>
-        <br>
-        <a href="{{url_for('query_bp.query_menu')}}">Работа с запросами</a>
-        <br>
-        <a href="{{url_for('report_bp.report_menu')}}">Работа с отчетами</a>
-        <br>
-        <a href="{{url_for('staff_bp.department_list')}}">Работа с персоналом</a>
-        <br>
-        <a href="{{url_for('exit_func')}}">Нажмите для выхода из системы</a>
-    </p>
-</center>
+    <div class="menu-container">
+        <header>
+            <h2>Главное меню</h2>
+        </header>
+        <main>
+            <p class="welcome-message">{{ message }}</p>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="{{ url_for('auth_bp.auth_index') }}">Авторизация</a></li>
+                    <li><a href="{{ url_for('query_bp.query_menu') }}">Работа с запросами</a></li>
+                    <li><a href="{{ url_for('report_bp.report_menu') }}">Работа с отчетами</a></li>
+                    <li><a href="{{ url_for('staff_bp.department_list') }}">Работа с персоналом</a></li>
+                    <li><a href="{{ url_for('exit_func') }}">Нажмите для выхода из системы</a></li>
+                </ul>
+            </nav>
+        </main>
+    </div>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Список врачей</title>
+    <link href="{{ url_for('static', filename='staff.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>Список врачей в отделении {{ department_id }}</h1>
@@ -32,7 +33,7 @@
                 <td>{{ doctor.doc_hire_date }}</td>
                 <td>{{ doctor.doc_fire_date if doctor.doc_fire_date else 'Нет' }}</td>
                 <td>
-                    <a href="{{ url_for('staff_bp.edit_doctor', department_id=department_id, doctor_id=doctor.doc_id) }}">Редактировать</a> |
+                    <a href="{{ url_for('staff_bp.edit_doctor', department_id=department_id, doctor_id=doctor.doc_id) }}">Редактировать</a>
                     <a href="{{ url_for('staff_bp.delete_doctor', department_id=department_id, doctor_id=doctor.doc_id) }}" onclick="return confirm('Вы уверены, что хотите удалить этого врача?')">Удалить</a>
                 </td>
             </tr>

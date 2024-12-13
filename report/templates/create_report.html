@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Создать отчет</title>
+    <link href="{{ url_for('static', filename='report.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<center>
-    <h2>Меню отчетов</h2>
-    <p>
+    <div class="report-container">
+        <h2>Меню отчетов</h2>
         <form action="" method="post">
             <label for="report_choice">Выберите отчет</label>
             <select name="report_choice" id="report_choice" required>
@@ -41,11 +41,10 @@
                 <option value="2024">2024</option>
             </select>
             <br><br>
-            <button type="submit">Сформировать отчет</button>
+            <button type="submit" class="submit-btn">Сформировать отчет</button>
         </form>
-    </p>
-    <br>
-    <a href="{{ url_for('report_bp.report_menu') }}">Вернуться в меню отчетов</a>
-</center>
+        <br>
+        <a href="{{ url_for('report_bp.report_menu') }}" class="back-link">Вернуться в меню отчетов</a>
+    </div>
 </body>
 </html>

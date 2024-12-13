@@ -2,20 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизация</title>
+    <link href="{{ url_for('static', filename='auth.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Введите логин и пароль</h1>
-    <form action="{{ url_for('auth_bp.auth_login') }}" method="post">
-        <label for="login">Логин:</label>
-        <input type="text" id="login" name="login" required>
+    <div class="auth-container">
+        <h1>Введите логин и пароль</h1>
+        <form action="{{ url_for('auth_bp.auth_login') }}" method="post">
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="login" required>
+            <br>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Войти" class="submit-button">
+        </form>
         <br>
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <input type="submit" value="Войти">
-    </form>
-    <br>
-    <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+        <a href="{{ url_for('main_menu') }}" class="return-link">Вернуться в главное меню</a>
+    </div>
 </body>
 </html>

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Отчет не найден</title>
+    <link href="{{ url_for('static', filename='report.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <center>
+    <div class="error-container">
         <h2>{{ result_message }}</h2>
         <a href="{{ url_for('report_bp.report_menu') }}">Вернуться в меню отчетов</a>
-    </center>
+    </div>
 </body>
 </html>

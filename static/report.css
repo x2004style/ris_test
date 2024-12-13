@@ -1,0 +1,609 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера меню */
+.menu-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок меню */
+.menu-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для ссылок */
+.menu-container a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффекты при наведении на ссылки */
+.menu-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Стили для вернувшихся на главное меню */
+.menu-container a:last-child {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.menu-container a:last-child:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрирование содержимого */
+.center-content {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок */
+.center-content h2 {
+    color: #4caf50;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Основной текст */
+.center-content p {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Выделение важной информации */
+.center-content strong {
+    color: #007bff;
+}
+
+/* Ссылка */
+.center-content a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.center-content a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрирование содержимого */
+.center-content {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок страницы */
+.center-content h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Сообщение результата (если есть) */
+.center-content p {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Стили для формы */
+.center-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для полей ввода */
+.center-content select,
+.center-content button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Эффекты при наведении на поля ввода и кнопки */
+.center-content select:hover,
+.center-content button:hover {
+    border-color: #007bff;
+    background-color: #e9f3fe;
+}
+
+/* Стили для таблицы */
+.center-content table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.center-content th,
+.center-content td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.center-content th {
+    background-color: #007bff;
+    color: black;
+}
+
+.center-content td {
+    background-color: #f9f9f9;
+}
+
+.center-content tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.center-content a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.center-content a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера ошибки */
+.error-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок ошибки */
+.error-container h2 {
+    color: #d9534f;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Основной текст ошибки */
+.error-container p {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.error-container a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.error-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера ошибки */
+.error-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок ошибки */
+.error-container h2 {
+    color: #f39c12; /* Оранжевый цвет для предупреждения */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Основной текст ошибки */
+.error-container p {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.error-container a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.error-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера ошибки */
+.error-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок ошибки */
+.error-container h2 {
+    color: #e74c3c; /* Красный цвет для ошибок */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.error-container a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.error-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера отчета */
+.report-view-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок отчета */
+.report-view-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.report-view-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Стили для заголовков таблицы */
+.report-view-container .tab_title {
+    background-color: #007bff;
+    color: black;
+    font-size: 18px;
+}
+
+.report-view-container th,
+.report-view-container td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.report-view-container td {
+    background-color: #f9f9f9;
+}
+
+.report-view-container tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.report-view-container a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.report-view-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера отчета */
+.report-view-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок отчета */
+.report-view-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.report-view-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Стили для заголовков таблицы */
+.report-view-container .tab_title {
+    background-color: #007bff;
+    color: black;
+    font-size: 18px;
+}
+
+.report-view-container th,
+.report-view-container td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.report-view-container td {
+    background-color: #f9f9f9;
+}
+
+.report-view-container tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.report-view-container a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.report-view-container a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера отчета */
+.report-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок страницы */
+.report-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Стили для формы */
+.report-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Стили для каждого поля формы */
+.report-container label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.report-container select {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект при наведении на кнопку */
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Ссылка "Вернуться в меню отчетов" */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении на ссылку */
+.back-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+

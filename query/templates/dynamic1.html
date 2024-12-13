@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dynamic</title>
-    <link href="{{ url_for('static', filename='sem1.css') }}" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты</title>
+    <link href="{{ url_for('static', filename='query.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<center>
-    <h2>{{prod_title}}</h2>
-    <table border="1">
-        <tr class="tab_title">
-            <td>ID врача</td>
-            <td>Фамилия врача</td>
-            <td>Количество пациентов</td>
-        </tr>
-        {% for doctor in doctors %}
-        <tr>
-            <td>{{doctor[0]}}</td>
-            <td>{{doctor[1]}}</td>
-            <td>{{doctor[2]}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-    <p>
-    <a href="{{ url_for('query_bp.query_menu') }}">Нажмите для возврата в меню запросов</a>
-    </p>
-</center>
+    <div class="dynamic-container">
+        <h2>{{prod_title}}</h2>
+        <table class="doctor-table">
+            <thead>
+                <tr class="tab-title">
+                    <th>ID врача</th>
+                    <th>Фамилия врача</th>
+                    <th>Специализация</th>
+                    <th>Отделение</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for doctor in doctors %}
+                <tr>
+                    <td>{{ doctor[0] }}</td>
+                    <td>{{ doctor[1] }}</td>
+                    <td>{{ doctor[2] }}</td>
+                    <td>{{ doctor[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p>
+            <a href="{{ url_for('query_bp.query_menu') }}" class="back-link">Нажмите для возврата в меню запросов</a>
+        </p>
+    </div>
 </body>
 </html>

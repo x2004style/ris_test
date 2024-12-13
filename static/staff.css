@@ -1,0 +1,357 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* Стили для таблицы */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Стили для кнопки возврата в меню */
+a[href="{{ url_for('main_menu') }}"] {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #16a085;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href="{{ url_for('main_menu') }}"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* Стили для формы */
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"], input[type="date"] {
+    width: 50%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Стили для ссылки "Назад" */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* Стили для ссылки "Добавить нового врача" */
+a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Стили для таблицы */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Стили для действия "Редактировать" и "Удалить" */
+td a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #3498db;
+}
+
+/* Стили для ссылки "Назад к списку отделений" */
+a[href="{{ url_for('staff_bp.department_list') }}"] {
+    display: block;
+    width: 220px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #16a085;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href="{{ url_for('staff_bp.department_list') }}"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* Стили для формы */
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"], input[type="date"] {
+    width: 50%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Стили для ссылки "Назад к списку врачей" */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px;
+}
+
+/* Стили для сообщения об ошибке */
+p:first-of-type {
+    font-weight: bold;
+    font-size: 20px;
+    color: #e74c3c;
+    margin-top: 30px;
+}
+
+/* Стили для заголовка "ОШИБКА" */
+p:last-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0392b;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+/* Стили для ссылки на главную */
+a {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3498db;
+}

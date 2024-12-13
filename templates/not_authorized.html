@@ -2,14 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Не авторизованы</title>
+    <link href="{{ url_for('static', filename='main_menu.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h2>Вы не авторизованы. Пожалуйста, войдите в систему.</h2>
-    <a href="{{ url_for('auth_bp.auth_index') }}">Авторизоваться</a>
-    </form>
-    <br>
-    <br>
-    <a href="{{ url_for('main_menu') }}">Вернуться в главное меню</a>
+    <div class="not-authorized-container">
+        <h2>Вы не авторизованы. Пожалуйста, войдите в систему.</h2>
+        <a href="{{ url_for('auth_bp.auth_index') }}" class="action-link">Авторизоваться</a>
+        <br>
+        <br>
+        <a href="{{ url_for('main_menu') }}" class="return-link">Вернуться в главное меню</a>
+    </div>
 </body>
 </html>
